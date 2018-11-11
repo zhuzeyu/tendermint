@@ -26,3 +26,4 @@ Friendly reminder, we have a [bug bounty program](https://hackerone.com/tendermi
 
 ### BUG FIXES:
 
+- [rpc] \#2808 RPC validators calls IncrementAccum if necessary
