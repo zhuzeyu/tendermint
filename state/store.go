@@ -226,7 +226,7 @@ func loadValidatorsInfo(db dbm.DB, height int64) *ValidatorsInfo {
 // only the last height for which the validators changed is persisted.
 func saveValidatorsInfo(db dbm.DB, height, lastHeightChanged int64, valSet *types.ValidatorSet) {
 	if lastHeightChanged > height {
-		panic("LastHeightChanged cannot be creater than ValidatorsInfo height")
+		panic("LastHeightChanged cannot be greater than ValidatorsInfo height")
 	}
 	valInfo := &ValidatorsInfo{
 		LastHeightChanged: lastHeightChanged,
