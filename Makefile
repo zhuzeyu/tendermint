@@ -79,8 +79,6 @@ check_tools:
 get_tools:
 	@echo "--> Installing tools"
 	./scripts/get_tools.sh
-	@echo "--> Downloading linters (this may take awhile)"
-	$(GOPATH)/src/github.com/alecthomas/gometalinter/scripts/install.sh -b $(GOBIN)
 
 update_tools:
 	@echo "--> Updating tools"
